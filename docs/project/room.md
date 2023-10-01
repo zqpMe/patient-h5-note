@@ -956,10 +956,10 @@ const getConsultFlagText = (flag: 0 | 1) =>
 
 4）预览病情图片 `Room/components/RoomMessage.vue`
 ```ts
-import { ImagePreview } from 'vant'
+import { showImagePreview } from 'vant'
 
 const previewImg = (pictures?: Image[]) => {
-  if (pictures && pictures.length) ImagePreview(pictures.map((item) => item.url))
+  if (pictures && pictures.length) showImagePreview(pictures.map((item) => item.url))
 }
 ```
 
